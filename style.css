@@ -39,12 +39,16 @@ input {
     margin-bottom: 20px;
 }
 
-.submit-button {
-    text-align: center;
+.div-button {
+    display: flex;
     margin-top: 30px;
-    width: 100%;
+    justify-content: center;
 }
 
-button {
-    padding: 5px 20%;
+.gen-button, .re-gen-button {
+    padding: 3px 20px;
+}
+
+.re-gen-button {
+    margin-left: 20px;
 }
