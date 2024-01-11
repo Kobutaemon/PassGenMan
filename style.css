@@ -43,13 +43,13 @@ input {
 .div-button {
     display: flex;
     margin-top: 30px;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.folder-button {
+    padding: 3px 5px;
 }
 
 .gen-button, .re-gen-button {
     padding: 3px 20px;
-}
-
-.re-gen-button {
-    margin-left: 20px;
 }
