@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pass Gen and Man</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="h1title">
+            <h1>Pass Gen</h1>
+        </div>
+        <div class="purpose">
+            <p class="p-purpose">用途</p>
+            <input type="text" class="input-purpose" placeholder="例: 〇〇用" autocomplete="off">
+        </div>
+        <div class="password">
+            <p class="p-password">パスワード</p>
+            <input type="text" class="input-password" placeholder="ここに出力">
+        </div>
+
+        <div class="pass-len">
+            <p class="p-len">桁数</p>
+            <input type="number" value="8" max="100" class="input-len">
+        </div>
+
+        <div class="submit-button">
+            <button onclick="genPass()"><b>生成・記録</b></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
