@@ -8,28 +8,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="h1title">
-            <h1>パスワード管理サイト</h1>
-        </div>
-        <div class="purpose">
-            <p class="p-purpose">用途</p>
-            <input type="text" class="input-purpose" placeholder="例: 〇〇用" autocomplete="off">
-        </div>
-        <div class="password">
-            <p class="p-password">パスワード</p>
-            <input type="text" class="input-password" placeholder="ここに出力">
-        </div>
+    <div class="header">
+        <a>Sign Up</a>
+        <a>Log In</a>
+        <a>アカウント</a>
+        <a>お問い合わせ</a>
+    </div>
 
-        <div class="pass-len">
-            <p class="p-len">桁数(上限:100)</p>
-            <input type="number" value="10" max="100" class="input-len">
-        </div>
-
-        <div class="div-button">
-            <button class="folder-button"><i class="fa-regular fa-folder"></i></button>
-            <button onclick="genPass()" class="gen-button"><b>生成・記録</b></button>
-            <button onclick="reGen()" class="re-gen-button"><b>再生成</b></button>
+    <div class="main-for-flex">
+        <div class="main">
+            <div class="h1title">
+                <h1>パスワード管理サイト</h1>
+            </div>
+            <div class="purpose">
+                <p class="p-purpose">用途</p>
+                <input type="text" class="input-purpose" placeholder="例: 〇〇用" autocomplete="off">
+            </div>
+            <div class="password">
+                <p class="p-password">パスワード</p>
+                <input type="text" class="input-password" placeholder="ここに出力">
+            </div>
+    
+            <div class="pass-len">
+                <p class="p-len">桁数(上限:100)</p>
+                <input type="number" value="10" max="100" class="input-len">
+            </div>
+    
+            <div class="div-button">
+                <button class="folder-button"><i class="fa-regular fa-folder"></i></button>
+                <button onclick="genPass()" class="gen-button"><b>生成・記録</b></button>
+                <button onclick="reGen()" class="re-gen-button"><b>再生成</b></button>
+            </div>
         </div>
     </div>
 

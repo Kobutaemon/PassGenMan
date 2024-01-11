@@ -8,10 +8,27 @@
 
 html, body {
     height: 100vh;
+    background: linear-gradient(0deg, rgba(224,255,205,1) 80%, rgba(255,239,134,1) 100%);
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header a {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.main-for-flex {
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e0ffcd;
+    flex-direction: column;
 }
 
 .main {
