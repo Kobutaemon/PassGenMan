@@ -60,6 +60,7 @@ input {
 .div-button {
     display: flex;
     margin-top: 30px;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -67,6 +68,6 @@ input {
     padding: 3px 5px;
 }
 
-.gen-button, .re-gen-button {
-    padding: 3px 20px;
+.gen-button, .record-button {
+    padding: 3px 40px;
 }

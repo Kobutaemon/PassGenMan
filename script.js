@@ -5,30 +5,6 @@ var password = "";
 function genPass() {
 
     var cFilled = document.querySelector(".input-password");
-
-    if (cFilled.value == "") {
-        var passLen = document.querySelector(".input-len");
-
-        
-        password = "";        
-
-        //パスワード生成
-        for (var i = 0; i < passLen.value; i++) {
-            password += passBase.charAt(Math.floor(Math.random() * passBase.length))
-        };
-
-        cFilled.value = password;
-
-    } else {
-        recordPass();
-    }
-
-};
-
-
-function reGen() {
-
-    var cFilled = document.querySelector(".input-password");
     var passLen = document.querySelector(".input-len");
 
     password = "";
