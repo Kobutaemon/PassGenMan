@@ -24,7 +24,7 @@ function recordPass() {
     if (purpose.value == "") {
         alert("用途の欄が空白になっています。");
     } else {
-        stringForRecord = `${purpose.value},${iPass.value}`;
+        stringForRecord = `${purpose.value},${iPass.value}\n`;
         navigator.clipboard.writeText(stringForRecord);
         alert("用途,パスワードをクリップボードにコピーしました。")
     }
