@@ -4,7 +4,7 @@ var password = "";
 
 function genPass() {
 
-    var cFilled = document.querySelector(".input-password");
+    var iPass = document.querySelector(".input-password");
     var passLen = document.querySelector(".input-len");
 
     password = "";
@@ -14,10 +14,18 @@ function genPass() {
         password += passBase.charAt(Math.floor(Math.random() * (passBase.length + 1)))
     };
 
-    cFilled.value = password;
+    iPass.value = password;
 }
 
 function recordPass() {
-    return;
-    //ファイルにパスワードを書き込む
+    var iPass = document.querySelector(".input-password");
+    var purpose = document.querySelector(".input-purpose");
+
+    if (purpose.value == "") {
+        alert("用途の欄が空白になっています。");
+    } else {
+        stringForRecord = `${purpose.value},${iPass.value}`;
+        navigator.clipboard.writeText(stringForRecord);
+        alert("用途,パスワードをクリップボードにコピーしました。")
+    }
 }
